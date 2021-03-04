@@ -17,6 +17,10 @@ echo "Number of times tails won"$c1
 if [ $c -eq $c1 ]
 then
 	echo "Its a Tie"
+	for (( j=0; j<2; j++))
+	do
+		coin=$((RANDOM%2))
+	done
 elif [ $c -gt $c1 ]
 then
 	echo "Head won"
